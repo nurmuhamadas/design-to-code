@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" class=" overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing page for Blogr">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <title>BlogR</title>
+  </head>
+
+  <body class="bg-[#fafafa] overflow-x-hidden">
+    <header data-aos="fade-down" class="w-full z-10 h-max fixed scroll-mt-96 top-0 left-0 flex items-center justify-between p-6 md:px-12 lg:px-24 xl:px-36 2xl:px-48">
+      <div>
+        <img src="assets/logo.svg" alt="Blogr-logo" width="101" height="40" />
+      </div>
+      <button aria-label="Open-menu" class="peer group p-2 md:hidden" id="burger" aria-expanded="true">
+        <img src="assets/icon-hamburger.svg" alt="Open-Menu" id="open" class="block group-open:hidden" width="32" height="18" />
+        <img src="assets/icon-close.svg" alt="close-Menu" id="close" class="hidden group-open:block" width="26" height="26" />
+      </button>
+      <div id="nav-element" class="
+        absolute top-24 left-1/2 bg-white shadow-md w-11/12 rounded py-8 px-6 divide-y transition-all ease-in-out duration-300 origin-top hide-nav
+        md:shadow-none md:relative md:rotate-x-0 md:translate-x-0 md:bg-transparent md:w-full md:p-0 md:flex md:divide-y-0 md:top-auto md:left-auto md:ml-12 md:justify-between
+        hide-nav peer-open:show-nav
+      ">
+        <nav class="pb-4 md:pb-0">
+          <ul class="
+            flex flex-col items-center space-y-2
+            md:flex-row md:space-y-0 md:text-white
+          ">
+          <li class="group w-full text-center md:relative">
+            <a href="#" class="flex items-center justify-center py-2 px-4">
+              Product
+              <img width="10" height="7" src="assets/icon-arrow-light.svg" alt="more" class="h-min ml-2 group-hover:rotate-180 transition-all hidden md:block" />
+              <img width="10" height="7" src="assets/icon-arrow-dark.svg" alt="more" class="h-min ml-2 md:hidden group-hover:rotate-180 transition-all" />
+            </a>
+            <ul class="
+            min-w-[10rem] bg-stone-200 rounded py-6 px-8 space-y-4 origin-top transition-all hidden group-hover:block
+              md:bg-white md:text-slate-800 md:absolute md:top-8 md:left-0
+            ">
+              <li>
+                <a href="#" class="hover:text-very-light-red hover:underline">Overview</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-very-light-red hover:underline">Pricing</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-very-light-red hover:underline">Marketplace</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-very-light-red hover:underline">Features</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-very-light-red hover:underline">Integrations</a>
+              </li>
+            </ul>
+          </li>
+          <li class="group w-full text-center md:relative">
+            <a href="#" class="flex items-center justify-center py-2 px-4">
+              Company
+              <img width="10" height="7" src="assets/icon-arrow-light.svg" alt="more" class="h-min ml-2 group-hover:rotate-180 transition-all hidden md:block" />
+              <img width="10" height="7" src="assets/icon-arrow-dark.svg" alt="more" class="h-min ml-2 md:hidden group-hover:rotate-180 transition-all" />
+            </a>
+            <ul class="
+              min-w-[10rem] bg-stone-200 rounded py-6 px-8 space-y-4 origin-top transition-all hidden group-hover:block
+              md:bg-white md:text-slate-800 md:absolute md:top-8 md:left-0
+            ">
+              <li>
+                <a href="#" class="hover:text-very-light-red hover:underline">About</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-very-light-red hover:underline">Team</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-very-light-red hover:underline">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-very-light-red hover:underline">Careers</a>
+              </li>
+            </ul>
+          </li>
+            <li class="group w-full text-center md:relative">
+              <a href="#" class="flex items-center justify-center py-2 px-4">
+                Connect
+                <img width="10" height="7" src="assets/icon-arrow-light.svg" alt="more" class="h-min ml-2 group-hover:rotate-180 transition-all hidden md:block" />
+                <img width="10" height="7" src="assets/icon-arrow-dark.svg" alt="more" class="h-min ml-2 md:hidden group-hover:rotate-180 transition-all" />
+              </a>
+              <ul class="
+              min-w-[10rem] bg-stone-200 rounded py-6 px-8 space-y-4 origin-top transition-all hidden group-hover:block
+                md:bg-white md:text-slate-800 md:absolute md:top-8 md:left-0
+              ">
+                <li>
+                  <a href="#" class="hover:text-very-light-red hover:underline">Contact</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-very-light-red hover:underline">Newsletter</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:text-very-light-red hover:underline">Linkedin</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="flex flex-col items-center space-y-4 pt-4 md:flex-row md:space-y-0 md:pt-0 md:pl-4">
+          <a href="#" class="md:pr-6 md:text-white hover:underline">
+            Login
+          </a>
+          <button class="bg-gradient-to-r from-very-light-red to-light-red px-8 py-3 rounded-full text-white font-bold text-sm md:bg-white md:text-light-red md:bg-none hover:bg-stone-100">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="
+      relative text-white text-center bg-hero-pattern-small h-[640px] flex flex-col items-center justify-center px-8 bg-[center_top_-24rem] bg-no-repeat rounded-bl-[5rem] md:rounded-bl-[7rem] lg:rounded-bl-[10rem]
+      md:h-screen md:bg-hero-pattern md:bg-[25%_center]
+      before:bg-gradient-to-r before:from-very-light-red before:to-light-red before:absolute before:inset-0 before:-z-10 before:rounded-bl-[5rem] md:before:rounded-bl-[7rem] lg:before:rounded-bl-[10rem]
+    ">
+      <h1 data-aos="fade-in" data-aos-delay="500" class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-center font-semibold font-overpass">A modern <br class="sm:hidden" /> publishing platform</h1>
+      <p  data-aos="fade-in" data-aos-delay="500" class="mt-4">Grow your audience and build your online brand</p>
+      <div data-aos="fade-up"  class="mt-12 space-x-4">
+        <button class="text-light-red bg-white px-4 py-3 rounded-full font-bold">Start for Free</button>
+        <button class="bg-transparent px-5 py-3 rounded-full font-bold border border-white">Learn More</button>
+      </div>
+    </div>
+
+    <div class="w-full h-auto py-24 text-center lg:text-left lg:py-36 lg:h-[1000px]">
+      <h2 data-aos="fade-up" class="font-bold text-3xl font-overpass text-very-dark-blue mb-12 lg:text-center">Designed for the future</h2>
+      <div class="w-full lg:flex-row-reverse lg:flex">
+        <div data-aos="fade-up" data-aos-delay="500" class="lg:w-3/6 relative overflow-x-clip">
+          <img width="406" height="331" src="assets/illustration-editor-mobile.svg" alt="edito" class="opacity-100 mx-auto lg:hidden" />
+          <img width="995" height="882" src="assets/illustration-editor-desktop.svg" alt="edito" class="opacity-100 mx-auto hidden lg:block scale-125 absolute -right-32 -top-24" />
+        </div>
+        <div class="mt-12 px-8 font-overpass lg:w-2/5 lg:pr-10">
+          <div data-aos="fade-right" data-aos-delay="800">
+            <span class="text-3xl text-very-dark-blue font-overpass font-bold block">Introducing an<br class="sm:hidden" />extensible editor</span>
+            <p class="mt-4 opacity-60">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+              The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+              videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+              change the looks of a blog.</p>
+          </div>
+          <div data-aos="fade-right" data-aos-delay="1100" class="mt-12">
+            <span class="text-3xl text-very-dark-blue font-overpass font-bold block">Robust content management</span>
+            <p class="mt-4 opacity-60">Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+              by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="
+      px-4 bg-pattern-circle relative bg-[center_-16rem] bg-no-repeat bg-cover rounded-tr-[6rem] rounded-bl-[6rem] mt-24
+      after:inset-0 after:bg-[#3A3B59] after:absolute after:-z-10 after:rounded-tr-[6rem] after:rounded-bl-[6rem]
+      md:px-12
+      lg:flex lg:items-center lg:h-[360px] lg:bg-[position:-16rem_-36rem] lg:mt-0 lg:bg-[length:1024px]
+      xl:h-[400px]
+      ">
+      <div class="-translate-y-36 lg:translate-y-0 lg:w-1/2">
+        <img data-aos="fade-up" width="552" height="579" alt="phone" src="./assets/illustration-phones.svg" class="mx-auto" />
+      </div>
+      <div class="px-4 text-center text-white -translate-y-36 lg:translate-y-0 lg:text-left lg:w-1/2 xl:pr-24">
+        <h2 data-aos="fade-up" class="font-bold font-overpass text-4xl">State of the Art Infrastructure</h2>
+        <p data-aos="fade-up" class="mt-6 leading-7 opacity-60">With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+      </div>
+    </div>
+
+    <div class="w-full h-auto py-16 text-center lg:text-left lg:py-36 lg:h-[840px]">
+      <div class="w-full lg:flex-row lg:flex">
+        <div data-aos="fade-right" class="lg:w-3/6 relative overflow-x-clip lg:h-auto">
+          <img width="498" height="359" src="assets/illustration-laptop-mobile.svg" alt="edito" class="opacity-100 mx-auto lg:hidden" />
+          <img width="974" height="786" src="assets/illustration-laptop-desktop.svg" alt="edito" class="opacity-100 mx-auto hidden lg:block scale-125 absolute -left-32 -top-" />
+        </div>
+        <div class="mt-12 px-8 font-overpass lg:w-2/5 lg:pr-10 lg:mt-0 lg:pt-28">
+          <div data-aos="fade-up" data-aos-delay="500">
+            <span class="text-3xl text-very-dark-blue font-overpass font-bold block">Free, open, simple</span>
+            <p class="mt-4 opacity-60">Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+              features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+              and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.</p>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="750" class="mt-12">
+            <span class="text-3xl text-very-dark-blue font-overpass font-bold block">Powerful tooling</span>
+            <p class="mt-4 opacity-60">Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+              capable of producing even the most complicated sites.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer data-aos="fade-up" class="px-4 py-16 text-white bg-very-dark-black-blue rounded-tr-[5rem] text-center md:flex md:items-start md:px-12 md:text-left md:pb-20">
+      <img width="101" height="40" src="./assets/logo.svg" alt="Blogr-logo" class="mx-auto mb-12">
+      <div class="space-y-10 md:w-2/3 md:flex md:space-y-0 md:space-x-20 lg:space-x-32 xl:space-x-40">
+        <div class="flex flex-col space-y-4">
+          <span class="font-bold">Product</span>
+          <ul class="space-y-2">
+            <li class="">
+              <a href="#" class="opacity-60 hover:text-very-light-red hover:underline hover:opacity-100">Overview</a>
+            </li>
+            <li class="">
+              <a href="#" class="opacity-60 hover:text-very-light-red hover:underline hover:opacity-100">Pricing</a>
+            </li>
+            <li class="">
+              <a href="#" class="opacity-60 hover:text-very-light-red hover:underline hover:opacity-100">Marketplace</a>
+            </li>
+            <li class="">
+              <a href="#" class="opacity-60 hover:text-very-light-red hover:underline hover:opacity-100">Features</a>
+            </li>
+            <li class="">
+              <a href="#" class="opacity-60 hover:text-very-light-red hover:underline hover:opacity-100">Integrations</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col space-y-4">
+          <span class="font-bold">Company</span>
+          <ul class="space-y-2">
+            <li class="">
+              <a href="#" class="opacity-60 hover:text-very-light-red hover:underline hover:opacity-100">About</a>
+            </li>
+            <li class="">
+              <a href="#" class="opacity-60 hover:text-very-light-red hover:underline hover:opacity-100">Blog</a>
+            </li>
+            <li class="">
+              <a href="#" class="opacity-60 hover:text-very-light-red hover:underline hover:opacity-100">Tean</a>
+            </li>
+            <li class="">
+              <a href="#" class="opacity-60 hover:text-very-light-red hover:underline hover:opacity-100">Careers</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex flex-col space-y-4">
+          <span class="font-bold">Connect</span>
+          <ul class="space-y-2">
+            <li class="">
+              <a href="#" class="opacity-60 hover:text-very-light-red hover:underline hover:opacity-100">Contact</a>
+            </li>
+            <li class="">
+              <a href="#" class="opacity-60 hover:text-very-light-red hover:underline hover:opacity-100">Newsletter</a>
+            </li>
+            <li class="">
+              <a href="#" class="opacity-60 hover:text-very-light-red hover:underline hover:opacity-100">Linkedin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 300,
+        duration: 500,
+      });
+      const burger = document.getElementById('burger');
+      burger.addEventListener('click', () => {
+        if (burger.getAttribute('open')) burger.removeAttribute('open');
+        else burger.setAttribute('open', true);
+      });
+  
+      const throttle = (func, limit) => {
+        let inThrottle;
+        return function() {
+          const args = arguments;
+          const context = this;
+          if (!inThrottle) {
+            func.apply(context, args);
+            inThrottle = true;
+            setTimeout(() => inThrottle = false, limit);
+          }
+        }
+      }
+  
+      const navbar = document.querySelector('header');
+      window.addEventListener('scroll', throttle(() => {
+        if (window.scrollY > 200) {
+          navbar.classList.add('bg-gradient-to-r', 'from-very-light-red', 'to-light-red');
+        } else {
+          navbar.classList.remove('bg-gradient-to-r', 'from-very-light-red', 'to-light-red');
+        }
+      }, 150));
+    </script>
+  </body>
+</html>
